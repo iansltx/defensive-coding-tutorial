@@ -45,7 +45,7 @@ class DataModel
 
         if (!preg_match($uuid_pattern, $uuid))
         {
-            throw InvalidArgumentException;
+            throw new InvalidArgumentException('Invalid UUID. Input was: ' . $uuid);
         }
 
         $this->uuid = $uuid;
