@@ -1,7 +1,7 @@
 Decrypt each item:
 
 1. laitnedifnoc
-2. 5f4dcc3b5aa765d61d8327deb882cf99
+2. 'password' - 5f4dcc3b5aa765d61d8327deb882cf99
 3. psbohf
 4. aGlkZGVu
 5. c0.a8.0.1
