@@ -41,7 +41,15 @@ class DataModel
      */
     public function setUuid($uuid)
     {
+        $uuid_pattern = '/[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}/';
+
+        if (!preg_match($uuid_pattern, $uuid))
+        {
+            throw InvalidArgumentException;
+        }
+
         $this->uuid = $uuid;
+
         return $this;
     }
 
